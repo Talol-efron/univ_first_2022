@@ -1,0 +1,11 @@
+/* LP.mod.txt */
+
+var x1 >= 0 ;
+var x2 >= 0 ;
+
+maximize z: 2*x1 + 3*x2 ;
+s.t. st1: x1 + 3*x2 <= 24 ;
+s.t. st2: 4*x1 + 4*x2 <= 48 ;
+s.t. st3: 2*x1 + x2 <= 22 ;
+
+end;

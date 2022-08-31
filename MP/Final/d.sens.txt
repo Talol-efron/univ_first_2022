@@ -1,0 +1,41 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    d
+Objective:  z = 62000 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS   62000.00000  -62000.00000          -Inf    50000.00000      -1.00000        .      st1
+                                            .               +Inf    62000.00000          +Inf          +Inf
+
+     2 st1          NU     600.00000        .               -Inf         .          -20.00000   50000.00000 x1
+                                          20.00000     600.00000           +Inf          +Inf          +Inf
+
+     3 st2          NU    2000.00000        .               -Inf      750.00000     -10.00000   49500.00000 x3
+                                          10.00000    2000.00000    12000.00000          +Inf  162000.00000 x4
+
+     4 st3          NU    3000.00000        .               -Inf      500.00000     -10.00000   37000.00000 x4
+                                          10.00000    3000.00000     8000.00000          +Inf  112000.00000 x3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    d
+Objective:  z = 62000 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS      60.00000     200.00000        .          -190.00000     200.00000   62000.00000 x2
+                                            .               +Inf       60.00000          +Inf          +Inf
+
+     2 x2           NL        .          150.00000        .                -Inf          -Inf   62000.00000
+                                            .               +Inf      120.00000     150.00000   62000.00000 x1
+
+     3 x3           BS     166.66667     100.00000        .           126.66667     100.00000   62000.00000 x2
+                                            .               +Inf      250.00000     400.00000  112000.00000 st3
+
+     4 x4           BS     333.33333     100.00000        .           313.33333     100.00000   62000.00000 x2
+                                            .               +Inf      375.00000     400.00000  162000.00000 st2
+
+End of report
